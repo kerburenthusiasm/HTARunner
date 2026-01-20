@@ -25,7 +25,7 @@ Documented changes from the original include:
 * **Execution timing**
 
   * Introduced a delay mechanism prior to later stages using a local network command.
-  * Purpose: alter runtime behavior for observation and testing, not stealth.
+  * Purpose: provide sufficient time for payload to be downloaded onto the machine
 
 ## Intent and Limitations
 
