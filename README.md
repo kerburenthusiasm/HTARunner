@@ -1,4 +1,4 @@
-# Attribution and Provenance
+# Attribution
 
 This repository contains a **derivative work** based on the *HTA Runner* proof-of-concept originally published on *phrack.me* in November 2022.
 
